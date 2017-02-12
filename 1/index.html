@@ -1,171 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrap">
-            <figure>
-                <img src="img/logo.png" alt="masteralb">
-            </figure>
-            <div class="container">
-                <div class="col">
-                    <div class="box">
-                        <h2>Register Form</h2>
-                        <div class="box__outer">
-                            <div class="box__inner">
-                                <form>
-                                
-                                    <div class="form-group">
-                                      <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="text" name="username" placeholder="Username">
-                                    </div>
-                                    <div class="form-group">
-                                      <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="password" name="password" placeholder="Password">
-                                    </div>
-                                    <div class="form-group">
-                                      <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="password" name="username" placeholder="Confirm Password">
-                                    </div>
-                                    <div class="form-group">
-                                      <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="email" name="email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                      <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <select type="select">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap">
+        <figure>
+            <img src="img/logo.png" alt="masteralb">
+        </figure>
+        <div class="container">
+            <div class="col">
+                <div class="box">
+                    <h2>Register Form</h2>
+                    <div class="box__outer">
+                        <div class="box__inner">
+                            <form>
+
+                                <div class="form-group">
+                                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="text" name="username" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="password" name="username" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <select type="select">
                                             <option value="Location">Location</option>
                                             <option value="Location1">Location1</option>
                                             <option value="Location2">Location2</option>
                                       </select>
-                                      <i class="fa fa-chevron-down select" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="reg_button">
-                                        <label for="reg_button">
+                                    <i class="fa fa-chevron-down select" aria-hidden="true"></i>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="reg_button">
+                                    <label for="reg_button">
                                             <span></span>
-                                        </label>
-                                        I have read and accept the terms of use.
-                                    </div>
-                                    <button type="submit" class="confirm">Sign up</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <h2>Send Email</h2>
-                        <div class="box__outer">
-                            <div class="box__inner">
-                                <form>
-                                    <div class="form-group">
-                                      <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="text" name="username" placeholder="Your Name">
-                                    </div>
-                                    <div class="form-group">
-                                      <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="email" name="email" placeholder="Email">
-                                    </div>
-                                      <textarea rows="10" placeholder="Type your message..."></textarea>
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="email_button">
-                                        <label for="email_button">
-                                            <span></span>
-                                        </label>
-                                        Sena a copy to my Email
-                                    </div>
-                                    <button type="submit" class="confirm">Send Email</button>
-                                </form>
-                            </div>
+                                        </label> I have read and accept the terms of
+                                    use.
+                                </div>
+                                <button type="submit" class="confirm">Sign up</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="box">
-                        <h2>Sign In Form</h2>
-                        <div class="box__outer">
-                            <div class="box__inner">
-                                <form action="">
-                                    <div class="form-group">
-                                      <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="text" name="username" placeholder="Username">
-                                    </div>
-                                    <div class="form-group">
-                                      <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="password" name="password" placeholder="Password">
-                                    </div>
-                                    <span class="button-panel">
-                                        <div class="checkbox">
-                                            <input type="checkbox" id="sign_button">
-                                            <label for="sign_button">
-                                                <span></span>
-                                            </label>
-                                           Rember me
-                                        </div>
-                                        <button type="submit" class="sm confirm">Sign in</button>
-                                    </span>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <h2>Recovery Form</h2>
-                        <div class="box__outer">
-                            <div class="box__inner">
-                                <form action="">
-
-                                    <div class="form-group">
-                                      <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="email" name="email" placeholder="Enter your Email">
-                                    </div>
-                                    <div class="form-group">
-                                      <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="tel" name="tel" placeholder="Enter your Phone number">
-                                    </div>
-                                    <span class="button-panel">
-                                        <button type="submit" class="sm confirm">Send</button>
-                                        <button type="submit" class="sm done">Done</button>
-                                    </span>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <h2>Subscribe</h2>
-                        <div class="box__outer">
-                            <div class="box__inner">
-                                <form action="">
-                                    <div class="form-group">
-                                      <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                      <div class="form-group__line"></div>
-                                      <input type="email" name="email" placeholder="Enter your Email">
-                                    </div>
-                                    <span class="button-panel">
-                                        <button type="submit" class="sm confirm">Subscribe</button>
-                                        <button type="reset" class="sm decline">No, Thanks</button>
-                                    </span>
-                                </form>
-                            </div>
+                <div class="box">
+                    <h2>Send Email</h2>
+                    <div class="box__outer">
+                        <div class="box__inner">
+                            <form>
+                                <div class="form-group">
+                                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="text" name="username" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="email" name="email" placeholder="Email">
+                                </div>
+                                <textarea rows="10" placeholder="Type your message..."></textarea>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="email_button">
+                                    <label for="email_button">
+                                            <span></span>
+                                        </label> Sena a copy to my Email
+                                </div>
+                                <button type="submit" class="confirm">Send Email</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="box">
+                    <h2>Sign In Form</h2>
+                    <div class="box__outer">
+                        <div class="box__inner">
+                            <form action="">
+                                <div class="form-group">
+                                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="text" name="username" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                                    <div class="form-group__line"></div>
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>
+                                <span class="button-panel">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="sign_button">
+                                            <label for="sign_button">
+                                                <span></span>
+                                </label>
+                                Rember me
+                        </div>
+                        <button type="submit" class="sm confirm">Sign in</button>
+                        </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Recovery Form</h2>
+                <div class="box__outer">
+                    <div class="box__inner">
+                        <form action="">
+
+                            <div class="form-group">
+                                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                <div class="form-group__line"></div>
+                                <input type="email" name="email" placeholder="Enter your Email">
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                <div class="form-group__line"></div>
+                                <input type="tel" name="tel" placeholder="Enter your Phone number">
+                            </div>
+                            <span class="button-panel">
+                                        <button type="submit" class="sm confirm">Send</button>
+                                        <button type="submit" class="sm done">Done</button>
+                                    </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Subscribe</h2>
+                <div class="box__outer">
+                    <div class="box__inner">
+                        <form action="">
+                            <div class="form-group">
+                                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                <div class="form-group__line"></div>
+                                <input type="email" name="email" placeholder="Enter your Email">
+                            </div>
+                            <span class="button-panel">
+                                        <button type="submit" class="sm confirm">Subscribe</button>
+                                        <button type="reset" class="sm decline">No, Thanks</button>
+                                    </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <figure>
+                <img src="img/logo_footer.png" alt="masteralb">
+            </figure>
         </div>
-    </body>
+    </div>
+    </div>
+</body>
+
 </html>
