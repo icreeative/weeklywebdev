@@ -1,3 +1,11 @@
+
+@mixin background-image($a, $b){
+  background-color: $a; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, $a, $b); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(top,$a, $b); /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(top,$a, $b); /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(to bottom,$a, $b); /* Standard syntax; must be last */
+}
 *, *:after, *:before{
     box-sizing: border-box;
 }
@@ -182,7 +190,7 @@ button{
 }
 
 button.confirm{
-    background:-moz-linear-gradient(#a2d642,#80c421);
+    @include background-image(#a2d642,#80c421);
     border: 1px solid #3b9900;
 }
 
@@ -190,7 +198,7 @@ button.confirm:hover{
     background: #80c421;
 }
 button.decline{
-    background:-moz-linear-gradient(#f5717e,#eb3b43);
+    @include background-image(#f5717e,#eb3b43);
     border: 1px solid #a12029;
 }
 
@@ -198,7 +206,7 @@ button.decline:hover{
     background: #eb3b43;
 }
 button.done{
-    background:-moz-linear-gradient(#cde3b1,#acd182);
+    @include background-image(#cde3b1,#acd182);
     border: 1px solid #92c96f;
 }
 
@@ -245,5 +253,5 @@ form > .form-group:last-of-type{
 
 
 input[type=checkbox]:checked + label > span{
-    background:-moz-linear-gradient(#a2d642,#80c421);
+    @include background-image(#a2d642,#80c421);
 }
