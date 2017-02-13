@@ -185,7 +185,7 @@ button{
     text-shadow: 0 0 3px black;
     &.sm{
         padding: 4px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 .button-panel{
@@ -193,7 +193,7 @@ button{
     justify-content: space-between;
     align-items: center;
     button{ 
-        width: 45%;
+        width: 47%;
     }
 }
 
@@ -262,4 +262,19 @@ form > .form-group:last-of-type{
 
 input[type=checkbox]:checked + label > span{
     @include background-image(#a2d642,#80c421);
+}
+
+.main-logo{
+    max-width: 430px;
+}
+
+.footer-logo{
+    max-width: 360px;
+}
+
+
+@media (max-width: 360px){
+    .col{
+        padding: 0;
+    }
 }
