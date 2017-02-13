@@ -1,11 +1,11 @@
 
 @mixin background-image($a, $b){
   background-color: $a; /* fallback color if gradients are not supported */
-  background-image: -webkit-gradient(linear, left top, left bottom, from($a), to($b));
-  background-image: -webkit-linear-gradient(top, $a, $b); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background-image:    -moz-linear-gradient(top,$a, $b); /* For Firefox (3.6 to 15) */
-  background-image:      -o-linear-gradient(top,$a, $b); /* For old Opera (11.1 to 12.0) */ 
-  background-image:         linear-gradient(to bottom,$a, $b); /* Standard syntax; must be last */
+  background: -webkit-gradient(linear, left top, left bottom, from($a), to($b));
+  background: -webkit-linear-gradient(top, $a, $b); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background:    -moz-linear-gradient(top,$a, $b); /* For Firefox (3.6 to 15) */
+  background:      -o-linear-gradient(top,$a, $b); /* For old Opera (11.1 to 12.0) */ 
+  background:         linear-gradient(to bottom,$a, $b); /* Standard syntax; must be last */
 }
 *, *:after, *:before{
     box-sizing: border-box;
@@ -101,7 +101,7 @@ body{
     color: #c4c4c4;
     border: 1px solid #c4c4c4;
     border-radius: 3px;
-    background: -moz-linear-gradient(#f6f6f6,#e7e7e7);
+    @include background-image(#f6f6f6,#e7e7e7);
     position: relative;
     i{
        text-align: center;
@@ -157,7 +157,7 @@ body{
 }
     textarea{
         margin-bottom: 20px;
-    background: -moz-linear-gradient(#f6f6f6,#e7e7e7);
+        @include background-image(#f6f6f6,#e7e7e7);
         border: 1px solid #c4c4c4;
         border-radius: 4px;
         width: 100%;
