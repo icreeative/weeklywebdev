@@ -103,7 +103,7 @@ body{
     align-content: center;
     width: 100%;
     height:auto;
-    padding: 3px 15px;
+    padding: 3px 13px;
     margin-bottom: 20px;
     color: #c4c4c4;
     border: 1px solid #c4c4c4;
@@ -115,7 +115,7 @@ body{
     }
     &__line:after{
         position: absolute;
-        left: 40px;
+        left: 42px;
         content: "";
         width:1px;
         min-height: 32px;
