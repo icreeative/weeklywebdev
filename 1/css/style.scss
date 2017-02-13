@@ -7,6 +7,13 @@
   background:      -o-linear-gradient(top,$a, $b); /* For old Opera (11.1 to 12.0) */ 
   background:         linear-gradient(to bottom,$a, $b); /* Standard syntax; must be last */
 }
+
+.img-responsive{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 *, *:after, *:before{
     box-sizing: border-box;
 }
