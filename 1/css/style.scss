@@ -1,6 +1,7 @@
 
 @mixin background-image($a, $b){
   background-color: $a; /* fallback color if gradients are not supported */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($a), to($b));
   background-image: -webkit-linear-gradient(top, $a, $b); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
   background-image:    -moz-linear-gradient(top,$a, $b); /* For Firefox (3.6 to 15) */
   background-image:      -o-linear-gradient(top,$a, $b); /* For old Opera (11.1 to 12.0) */ 
